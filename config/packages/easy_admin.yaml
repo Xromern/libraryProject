@@ -9,25 +9,24 @@ easy_admin:
           list:
               fields:
                - "id"
-               - "title"
-               - "description"
-               - "number_pages"
-               - "date"
-               - "writer"
-               - "genres"
-               - { property: 'image', type: 'image', base_path: '%app.path.cover_images%', type_options: {data_class: null} }
-               - { property: 'pdf', type: 'pdf', base_path: '%app.path.pdfs%', type_options: {data_class: null} }
-
+               - { property: 'title', label: 'Название'}
+               - { property: 'description', label: 'Страницы'}
+               - { property: 'number_pages', label: 'Страницы'}
+               - { property: 'date', label: 'Публикация'}
+               - { property: 'writer', label: 'Писатели'}
+               - { property: 'genres', label: 'Жанры'}
+               - { property: 'image', label: 'Обложка', type: 'image', base_path: '%app.path.cover_images%', type_options: {data_class: null} }
+               - { property: 'pdf',label: 'Книга PDF', type: 'pdf', base_path: '%app.path.pdfs%', type_options: {data_class: null} }
           form:
               fields:
-                - "title"
-                - "description"
-                - "number_pages"
-                - "date"
-                - "writer"
-                - "genres"
-                - { property: 'imageFile', type: 'vich_image',type_options: {data_class: null} }
-                - { property: 'pdfFile', type: 'vich_file',type_options: {data_class: null} }
+                - { property: 'title', label: 'Название'}
+                - { property: 'description', label: 'Страницы'}
+                - { property: 'number_pages', label: 'Страницы'}
+                - { property: 'date', label: 'Публикация'}
+                - { property: 'writer', label: 'Писатели'}
+                - { property: 'genres', label: 'Жанры'}
+                - { property: 'imageFile', label: 'Обложка', type: 'vich_image',type_options: {data_class: null} }
+                - { property: 'pdfFile', label: 'Книга PDF', type: 'vich_file',type_options: {data_class: null} }
 
 
 
