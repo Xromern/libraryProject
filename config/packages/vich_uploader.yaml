@@ -1,0 +1,10 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        cover_images:
+            uri_prefix: /uploads/images/covers
+            upload_destination: '%kernel.project_dir%/public/uploads/images/covers'
+        book_pdf:
+            uri_prefix: /uploads/pdf
+            upload_destination: '%kernel.project_dir%/public/uploads/pdf'

@@ -1,7 +1,39 @@
 easy_admin:
-   entities:
-        # List the entity class name you want to manage
-      #  - App\Entity\Product
-        - App\Entity\Category
-        - App\Entity\Book
-        - App\Entity\Writer
+    entities:
+        Categoty:
+          class: App\Entity\Category
+        Writer:
+          class: App\Entity\Writer
+        Book:
+          class: App\Entity\Book
+          list:
+              fields:
+               - "id"
+               - "title"
+               - "description"
+               - "number_pages"
+               - "date"
+               - "writer"
+               - "genres"
+               - { property: 'image', type: 'image', base_path: '%app.path.cover_images%', type_options: {data_class: null} }
+               - { property: 'pdf', type: 'pdf', base_path: '%app.path.pdfs%', type_options: {data_class: null} }
+
+          form:
+              fields:
+                - "title"
+                - "description"
+                - "number_pages"
+                - "date"
+                - "writer"
+                - "genres"
+                - { property: 'imageFile', type: 'vich_image',type_options: {data_class: null} }
+                - { property: 'pdfFile', type: 'vich_file',type_options: {data_class: null} }
+
+
+
+
+
+
+
+
+

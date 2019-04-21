@@ -1,0 +1,17 @@
+[33mcommit 46dfd4bab1d3421a3e03c3ee4be0a98f63577d07[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Danil Ivasuk <da.ivasuk@gmail.com>
+Date:   Thu Apr 18 19:28:55 2019 +0300
+
+    adding controller genre and twig genre
+
+[33mcommit a3bc98c370f54069d5f2c4fb99ab11e3e7b57006[m[33m ([m[1;33mtag: 1.0[m[33m, [m[1;31mlibrary/master[m[33m)[m
+Author: Danil Ivasuk <da.ivasuk@gmail.com>
+Date:   Thu Apr 18 19:17:32 2019 +0300
+
+    adding new controller
+
+[33mcommit 54a4cabf13733caa2c359f1162021f155579720b[m
+Author: Danil Ivasuk <da.ivasuk@gmail.com>
+Date:   Thu Apr 18 19:10:20 2019 +0300
+
+    test
